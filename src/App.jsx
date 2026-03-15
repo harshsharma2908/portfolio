@@ -1,14 +1,28 @@
-import './App.css'
+import "./App.css";
+import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
+import Skills from "./components/Skills.jsx";
+import Experience from "./components/Experience.jsx";
+import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
- 
   return (
     <>
-      <div className='h-screen w-full flex justify-center items-center'>
-        <h1 className='text-5xl text-center'>Coming Soon!</h1>
-      </div>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
